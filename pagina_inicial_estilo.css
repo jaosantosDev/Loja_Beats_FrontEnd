@@ -1,0 +1,10 @@
+header {
+    display: flex;              /* faz h1 e nav ficarem na mesma linha */
+    justify-content: space-between; /* h1 à esquerda, nav à direita ou centralizado */
+    align-items: center;        /* centraliza verticalmente h1 e nav */
+    padding: 0 20px;            /* espaço nas laterais do header */
+}
+nav {
+    display: flex;              /* h2 em linha */
+    gap: 20px;                  /* espaço entre os h2 */
+}
