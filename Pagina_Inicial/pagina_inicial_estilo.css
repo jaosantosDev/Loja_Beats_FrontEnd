@@ -1,17 +1,27 @@
 body{
+    
     margin: 0;
     padding: 0;
+    background-image: url(img/estudio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur();
+    
 }
 #head1{
     position: relative;
     display: flex;
     align-items: center;
     padding: 30px;
-    background-color: rgb(20, 61, 197);
-    margin: none;
+    background-image: url(img/estudio.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 15px;
+    margin: 20px;
 }
 #head1 a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 #nomeSite{
@@ -26,7 +36,7 @@ body{
     gap: 30px;
 }
 #nav1 a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 #nav2{
@@ -37,6 +47,6 @@ body{
     gap: 30px;
 }
 #nav2 a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
