@@ -2,51 +2,97 @@ body{
     
     margin: 0;
     padding: 0;
-    background-image: url(img/estudio.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url(img/estudio1.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur();
-    
+    filter:grayscale(100%) brightness(45%);
+    transform: scale(1.1);
+    z-index: -1;   
 }
 #head1{
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    background-image: url(img/estudio.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    border-radius: 15px;
-    margin: 20px;
+
+    display: flex; /*Transforma em um container flexivel*/
+    justify-content: space-between; /*distribui o conteudo com espaço igual entre eles com base no eixo*/
+    align-items: center; /* alinhar conteudo verticalmente */
+    height: 60px;
+    margin: 10px;
+    padding: 0px;
+    border-bottom: 2px solid rgb(255, 238, 0); /* linha branca de 2px */
+    padding-bottom: 5px;
 }
 #head1 a{
-    color: rgb(255, 255, 255);
+
     text-decoration: none;
+    color: rgb(255, 238, 0);
+    padding: 5px;
+    
 }
 #nomeSite{
-    position: absolute;
-    left: 3%;
+     flex: 1;
+     font-size: 18px;
+     padding: 8px;
+}
+#nomeSite :hover{
+    transition: 0.3s;
+    font-size: 20px;
 }
 #nav1{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    gap: 40px;
 }
+
 #nav1 a{
-    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(255, 238, 0);
     text-decoration: none;
+    padding: 5px;
 }
+#nav1 a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    font-size: 18px;
+}
+
 #nav2{
-    position: absolute;
-    left: 95%;
-    transform: translateX(-88%);
+    flex: 1;
     display: flex;
+    justify-content: flex-end;
     gap: 30px;
+    padding: 8px;
 }
 #nav2 a{
-    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 18px;
+    color:rgb(255, 238, 0);
     text-decoration: none;
+    padding: 4px;
+
+}
+#nav2 a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    #head1 {
+        flex-direction: initial;
+        align-items: normal;
+    }
+    #nav1, #nav2 {
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
