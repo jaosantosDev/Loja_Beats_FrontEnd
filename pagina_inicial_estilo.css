@@ -1,10 +1,42 @@
-header {
-    display: flex;              /* faz h1 e nav ficarem na mesma linha */
-    justify-content: space-between; /* h1 à esquerda, nav à direita ou centralizado */
-    align-items: center;        /* centraliza verticalmente h1 e nav */
-    padding: 0 20px;            /* espaço nas laterais do header */
+body{
+    margin: 0;
+    padding: 0;
 }
-nav {
-    display: flex;              /* h2 em linha */
-    gap: 20px;                  /* espaço entre os h2 */
+#head1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(20, 61, 197);
+    margin: none;
+}
+#head1 a{
+    color: black;
+    text-decoration: none;
+}
+#nomeSite{
+    position: absolute;
+    left: 3%;
+}
+#nav1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+#nav1 a{
+    color: black;
+    text-decoration: none;
+}
+#nav2{
+    position: absolute;
+    left: 95%;
+    transform: translateX(-88%);
+    display: flex;
+    gap: 30px;
+}
+#nav2 a{
+    color: black;
+    text-decoration: none;
 }
