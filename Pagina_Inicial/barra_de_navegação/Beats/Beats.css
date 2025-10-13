@@ -24,7 +24,7 @@ body::before{
     background-color: black;
     height: 45px;
     color: white;
-    border-bottom: 2px solid rgb(255, 238, 0);
+    border-bottom: 2px solid rgb(255, 255, 255);
     padding-bottom: 5px;
 }
 
