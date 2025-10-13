@@ -40,10 +40,13 @@ body::before{
      flex: 1;
      font-size: 18px;
      padding: 8px;
+     cursor: pointer;
+     transition: color 0.2s;
 }
 #nomeSite :hover{
     transition: 0.3s;
     font-size: 20px;
+    color: rgb(255, 238, 0);
 }
 #nav1{
     flex: 1;

@@ -1,0 +1,58 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    
+}
+#head2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    height: 45px;
+    color: white;
+}
+
+#nomePagina{
+    cursor: pointer;
+    transition: color 0.2s;
+    
+}
+#nomePagina:hover{
+     color: rgb(255, 238, 0);
+     transform: scale(1.1);
+        transition: 0.3s;
+}
+#abas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex: 1;
+    
+}
+#abas h3{
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#abas h3:hover{
+        color: rgb(255, 238, 0);
+        transform: scale(1.1);
+        transition: 0.3s;
+}
+
+#carrinho{
+     display: flex;
+    justify-content: end;
+    padding: 8px;
+}
+#carrinho h4{
+    cursor: pointer;
+    transition: color 0,2s;
+}
+#carrinho h4:hover{
+    color: rgb(255, 238, 0);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
