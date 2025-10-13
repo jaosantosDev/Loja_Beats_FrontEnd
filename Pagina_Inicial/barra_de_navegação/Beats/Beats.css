@@ -6,6 +6,17 @@ body{
     overflow-x: hidden;
     
 }
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url(img/estudio2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter:grayscale(100%) brightness(45%);
+    z-index: -1;
+}
 #head2{
     display: flex;
     align-items: center;
@@ -13,6 +24,8 @@ body{
     background-color: black;
     height: 45px;
     color: white;
+    border-bottom: 2px solid rgb(255, 238, 0);
+    padding-bottom: 5px;
 }
 
 #nomePagina{
