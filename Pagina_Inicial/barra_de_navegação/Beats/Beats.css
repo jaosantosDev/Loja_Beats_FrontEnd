@@ -38,6 +38,8 @@ body::before{
      transform: scale(1.1);
         transition: 0.3s;
 }
+
+
 #abas{
     display: flex;
     justify-content: center;
@@ -55,16 +57,17 @@ body::before{
         transition: 0.3s;
 }
 
+
 #carrinho{
      display: flex;
     justify-content: end;
     padding: 8px;
 }
-#carrinho h4{
+#carrinho h3{
     cursor: pointer;
-    transition: color 0,2s;
+    transition: color 0.2s;
 }
-#carrinho h4:hover{
+#carrinho h3:hover{
     color: rgb(255, 238, 0);
     transform: scale(1.1);
     transition: 0.3s;

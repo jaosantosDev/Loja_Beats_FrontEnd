@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#head3{
+    display: flex;
+     align-items: center;
+    justify-content: center;
+}
+    
+#nomeGenero{
+    display: flex;
+}
+   
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+#navGeneros{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    
+}
+#navGeneros h3{
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#navGeneros h3:hover{
+      color: rgb(255, 238, 0);
+      transform: scale(1.1);
+      transition: 0.3s;
+}
