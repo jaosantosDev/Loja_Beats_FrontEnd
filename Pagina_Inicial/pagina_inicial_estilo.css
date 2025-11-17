@@ -93,11 +93,12 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 }
 
 
-#msg_principal{
+.msg_principal{
     flex-grow: 1;
     text-align: center;
     margin: 50px ;
     font-size: 22px;
+    min-height: 100vh;
    
     
   
@@ -108,7 +109,6 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 }
 #secao1 {
     color: white;
-    text-shadow: 3px 3px 2px black;
     margin-top: 3%;
      display: inline-block;
 }
@@ -130,22 +130,28 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
     
     
 }
-#caixa2 h2{
-     background-color: rgb(255, 255, 255);
+#principal2 #caixa2 h2{
+     background-color: transparent;
+     border: 2px solid ;
      padding: 8px;
      height: 23px;
      border-radius: 10px;
      font-size: 25px;  
-     border: 2px solid black;
    
 }
 #caixa2 h2 a{
     text-decoration: none;
-    color: rgb(0, 0, 0);  
+    color: white;
 }
 #caixa2 h2:hover{
     transform: scale(1.1);
     transition: 0.3s;
+    transform: scale(1.1);
+    color: rgb(255, 238, 0);
+}
+#caixa2 a:hover{
+     transform: scale(1.1);
+    color: rgb(255, 238, 0);
 }
 
 
