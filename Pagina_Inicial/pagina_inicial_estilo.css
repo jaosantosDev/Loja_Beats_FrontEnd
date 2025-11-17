@@ -13,11 +13,10 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
     content: ""; /*obrigatorio mesmo que vazio*/
     position: fixed; /*Faz o elemento grudar na tela, dixa fixo*/
     inset: 0; /*faz com que ele grude nos 4 cantos da tela*/
-    background-image: url(img/pexels-dmitry-demidov-515774-3784566.jpg);
+    background-image: url(img/ss.jpg);
     background-position: center; /*deixa a imagem centralizada*/
     background-size: cover; /*preenche toda a tela*/
     background-attachment: fixed; /*deixa a imagem fixada*/
-    filter:grayscale(30%) brightness(100%); /*filtros para a imagem*/
     transform: scale(1.1);
     z-index: -1;   /*coloca a imagem atras de todo conteudo*/
 }
