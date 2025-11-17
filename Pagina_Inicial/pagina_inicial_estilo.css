@@ -1,10 +1,13 @@
+html { height: 100%; }
 body{
     
     margin: 0; /*tira a margem da tela do body*/
     padding: 0;/*tira o padding da tela do body*/
     font-family: 'Times New Roman', Times, serif;
     overflow-x: hidden; /*tira o scroll horizontal da tela*/
-    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 body::before{ /*cria um elemento virtual antes do conteudo real*/
     content: ""; /*obrigatorio mesmo que vazio*/
@@ -92,9 +95,12 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 
 
 #msg_principal{
+    flex-grow: 1;
     text-align: center;
     margin: 50px ;
     font-size: 22px;
+   
+    
   
 }
 .caixa{
@@ -123,6 +129,7 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
     display: flex;
     justify-content: center;
     
+    
 }
 #caixa2 h2{
      background-color: rgb(255, 255, 255);
@@ -143,6 +150,20 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 }
 
 
+#links_redes_sociais{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#links_redes_sociais a:hover{
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+#copyright{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
 
 @keyframes subir{
     0% {
