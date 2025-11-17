@@ -18,63 +18,65 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
     transform: scale(1.1);
     z-index: -1;   /*coloca a imagem atras de todo conteudo*/
 }
-#cabecalho{
+#nome_site{
 
     display: flex; /*Transforma em um container flexivel*/
     align-items: center; /* alinhar conteudo verticalmente */
     justify-content: space-between; /*iguala os espaços*/
     height: 45px;
-    padding: 20px;
+    padding: 15px;
     border-bottom: 1px solid rgb(255, 255, 255); /* linha branca de 2px */
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
-#cabecalho a{
-
+#nome_site a{
     text-decoration: none;
-        color: rgb(255, 238, 0);
-        padding: 5px;
-    
+        color: rgb(255, 238, 0); 
 }
 #home_page{
-     position: relative;
-     left: 5%;
      font-size: 25px;
      font-family: Georgia, 'Times New Roman', Times, serif;
     
 
 }
+#navegacao_central ul, #nav_direita ul{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
 
-#nav_central{
-
-    display: flex; /*coloca cada elemento lado a lado*/
-    gap: 80px; /*espaçamentos entre os conteudos */
-     cursor: pointer;
-     transition: color 0.2s;
-     font-size: 25px;
 }
-
-#nav_central a{
+#navegacao_central ul{
+    gap: 30px;
+    font-size: 25px;
+}
+#navegacao_central a{
     display: inline-block;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 5px;
-
+    padding: 10px;
+    cursor: pointer;
+      transition: color 0.2s;
     
+
 }
-#nav_central a:hover{
+#navegacao_central a:hover{
     transform: scale(1.1);
      color: rgb(255, 238, 0);
      border-bottom: 1px solid rgb(255, 238, 0);
+     
 }
 
+
+
 #nav_direita{
-    position: relative;
-    right: 5%;
-    display: flex;
     gap: 30px;
     padding: 0px;
      cursor: pointer;
      transition: color 0.2s;
+}
+#nav_direita ul{
+    gap: 20px;
+    font-size: 20px;
 }
 #nav_direita a{
     display: inline-block;
@@ -89,9 +91,9 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 }
 
 
-#principal{
+#msg_principal{
     text-align: center;
-    margin: 50px 0;
+    margin: 50px ;
     font-size: 22px;
   
 }
@@ -105,6 +107,7 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
     margin-top: 3%;
      display: inline-block;
 }
+
 #h1-estilo{
     cursor: pointer;
     transition: color 0.1s ease, transform 0.3s ease;
@@ -151,15 +154,30 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
         opacity: 1;                  /* totalmente visível */
     }
 }
-@media screen and (max-width: 500px) {
-    #cabecalho {
+@media screen and (max-width: 850px) {
+    #nome_site {
         flex-direction: column;
-        align-items: normal;
-            height: 65px;
+        align-items: center; /* Centraliza horizontalmente após empilhar */
+        padding: 15px 10px; /* Reduz o padding nas laterais */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
     }
-    #nav_central, #nav_direita {
-        gap: 10px;
+
+    /* Regras de layout para empilhar e centralizar */
+    #navegacao_central, #nav_direita{
+        width: 100%; /* Ocupa toda a largura para melhor centralização */
         margin-top: 10px;
-        justify-content: center;
+        /* Remover justify-content daqui, pois o ul abaixo já faz isso */
+    }
+    
+    /* Regras de espaçamento para as listas ul */
+    #navegacao_central ul, #nav_direita ul {
+        justify-content: center; /* Centraliza os links dentro do ul */
+        gap: 10px; 
+    }
+    
+    /* Ajuste fino para os títulos, caso eles também causem estouro */
+    #home_page {
+        margin: 0;
+        padding: 0;
     }
 }
