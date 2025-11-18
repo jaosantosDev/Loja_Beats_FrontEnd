@@ -1,34 +1,25 @@
 html { height: 100%; }
 body{
-    
     margin: 0; /*tira a margem da tela do body*/
     padding: 0;/*tira o padding da tela do body*/
     font-family: 'Times New Roman', Times, serif;
     overflow-x: hidden; /*tira o scroll horizontal da tela*/
     height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-body::before{ /*cria um elemento virtual antes do conteudo real*/
-    content: ""; /*obrigatorio mesmo que vazio*/
-    position: fixed; /*Faz o elemento grudar na tela, dixa fixo*/
-    inset: 0; /*faz com que ele grude nos 4 cantos da tela*/
     background-image: url(img/ss.jpg);
     background-position: center; /*deixa a imagem centralizada*/
     background-size: cover; /*preenche toda a tela*/
     background-attachment: fixed; /*deixa a imagem fixada*/
-    transform: scale(1.1);
-    z-index: -1;   /*coloca a imagem atras de todo conteudo*/
 }
-#nome_site{
 
+#nome_site{
     display: flex; /*Transforma em um container flexivel*/
-    align-items: center; /* alinhar conteudo verticalmente */
-    justify-content: space-between; /*iguala os espaços*/
-    height: 45px;
-    padding: 15px;
-    border-bottom: 1px solid rgb(255, 255, 255); /* linha branca de 2px */
-    padding-bottom: 10px;
+     align-items: center; /* alinhar conteudo verticalmente */
+         justify-content: space-between; /*iguala os espaços*/
+             height: 45px;
+                 padding: 10px;
 }
 #nome_site a{
     text-decoration: none;
@@ -36,35 +27,33 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 }
 #home_page{
      font-size: 25px;
-     font-family: Georgia, 'Times New Roman', Times, serif;
+          font-family: Georgia, 'Times New Roman', Times, serif;
     
 
 }
 #navegacao_central ul, #nav_direita ul{
     list-style: none;
-    margin: 0;
-    padding: 0px;
-    display: flex;
+               display: flex;
 
 }
 #navegacao_central ul{
     gap: 30px;
-    font-size: 25px;
+         font-size: 25px;
 }
 #navegacao_central a{
     display: inline-block;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 10px;
-    cursor: pointer;
-      transition: color 0.2s;
+         color: rgb(255, 255, 255);
+            text-decoration: none;
+              padding: 10px;
+                  
     
 
 }
 #navegacao_central a:hover{
     transform: scale(1.1);
-     color: rgb(255, 238, 0);
-     border-bottom: 1px solid rgb(255, 238, 0);
+          color: rgb(255, 238, 0);
+             border-bottom: 1px solid rgb(255, 238, 0);
+                  padding-bottom: 5px;
      
 }
 
@@ -72,33 +61,34 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 
 #nav_direita{
     gap: 30px;
-    padding: 0px;
-     cursor: pointer;
-     transition: color 0.2s;
+         padding: 0px;
+             
 }
 #nav_direita ul{
     gap: 20px;
-    font-size: 20px;
+         font-size: 20px;
 }
 #nav_direita a{
     display: inline-block;
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 4px;
+          color:rgb(255, 255, 255);
+              text-decoration: none;
+                 padding: 4px;
 
 }
 #nav_direita a:hover{
     transform: scale(1.1);
-    color: rgb(255, 238, 0);
+       color: rgb(255, 238, 0);
+          border-bottom: 1px solid rgb(255, 238, 0);
+             padding-bottom: 3px;
 }
 
 
 .msg_principal{
     flex-grow: 1;
-    text-align: center;
-    margin: 50px ;
-    font-size: 22px;
-    min-height: 100vh;
+        text-align: center;
+          margin: 50px ;
+            font-size: 22px;
+             min-height: 100vh;
    
     
   
@@ -109,65 +99,65 @@ body::before{ /*cria um elemento virtual antes do conteudo real*/
 }
 #secao1 {
     color: white;
-    margin-top: 3%;
-     display: inline-block;
+      margin-top: 3%;
+         display: inline-block;
 }
 
 #h1-estilo{
     cursor: pointer;
-    transition: color 0.1s ease, transform 0.3s ease;
+         transition: color 0.1s ease, transform 0.3s ease;
    
 }
 #h1-estilo:hover{
     color: rgb(255, 238, 0);
-    transform: scale(1.1);
+          transform: scale(1.1);
     
 
 }
 #principal2{
     display: flex;
-    justify-content: center;
+         justify-content: center;
     
     
 }
 #principal2 #caixa2 h2{
      background-color: transparent;
-     border: 2px solid ;
-     padding: 8px;
-     height: 23px;
-     border-radius: 10px;
-     font-size: 25px;  
+             border: 2px solid ;
+                 padding: 8px;
+                      height: 23px;
+                          border-radius: 10px;
+                                  font-size: 25px;  
    
 }
 #caixa2 h2 a{
     text-decoration: none;
-    color: white;
+          color: white;
 }
 #caixa2 h2:hover{
     transform: scale(1.1);
-    transition: 0.3s;
-    transform: scale(1.1);
-    color: rgb(255, 238, 0);
+         transition: 0.3s;
+             transform: scale(1.1);
+              color: rgb(255, 238, 0);
 }
 #caixa2 a:hover{
      transform: scale(1.1);
-    color: rgb(255, 238, 0);
+         color: rgb(255, 238, 0);
 }
 
 
 #links_redes_sociais{
     display: flex;
-    justify-content: center;
-    gap: 30px;
+          justify-content: center;
+             gap: 30px;
 }
 #links_redes_sociais a:hover{
     transform: scale(1.3);
-    transition: 0.2s;
+         transition: 0.2s;
 }
 #copyright{
     display: flex;
-    justify-content: center;
-    color: white;
+         justify-content: center;
+             color: white;
 }
 
 @keyframes subir{
