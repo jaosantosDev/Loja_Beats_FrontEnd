@@ -3,26 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+        rel='stylesheet'> 
     <link rel="stylesheet" href="Cadastrar.css">
     <title>Cadastrar</title>
 </head>
 <body>
     <main class="caixa_cadastro">
         <form>
-            <h1>Registrar conta</h1>
+            <h1>Registrar</h1>
             <div class="input_inform">
                 <input placeholder="Nome do Usuario" type="text" required >
+                <i class="bx bxs-user"></i>
             </div>
             <div class="input_inform">
                 <input placeholder="Email" type="email">
+                <i class="bx bxs-user"></i>
             </div>
             <div class="input_inform">
                 <input placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt"></i>
             </div>
             <div class="input_inform">
                 <button type="submit">
                     Registrar
                 </button>
+            </div>
+            <div class="register">
+                <p>Ja tem um conta?   <a href="#"> Iniciar sessão</a></p>
             </div>
             
         </form>
