@@ -38,7 +38,8 @@ body{
 }
 #navegacao_central ul{
     gap: 30px;
-         font-size: 25px;
+         font-size: 22px;
+            
 }
 #navegacao_central a{
     display: inline-block;

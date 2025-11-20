@@ -16,23 +16,56 @@ body{
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 .name_site{
     display: flex;
-    font-size: 20px;
+    font-size: 28px;
     margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
 }
 .nav_central ul{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
+        margin-right: 18px;
+        font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+                
+                
+}
+.nav_central a{
+    text-decoration: none;
+         color: white;
+}
+.nav_central a:hover{
+    transform: scale(1.1);
+        color: yellow;
+            border-bottom: 1px solid yellow;
+                padding-bottom: 5px;
+                    transform: scale(1.1);
+                        transition: 0.3s;
 }
 .nav_direita ul{
     display: flex;
     gap: 20px;
     list-style: none;
-    margin: 10px;
+    margin: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav_direita a{
+    text-decoration: none;
+         color: white;
+}
+.nav_direita a:hover{
+    transform: scale(1.1);
+        color: yellow;
+            border-bottom: 1px solid yellow;
+                padding-bottom: 5px;
+                    transform: scale(1.1);
+                        transition: 0.3s;
 }
 .principal{
     margin: 20px;
