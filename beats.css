@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: url(img/ss.jpg);
+    background: url(Pagina_Inicial/img/ss.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -24,6 +24,10 @@ body{
     font-size: 28px;
     margin: 10px;
     font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+}
+.name_site a{
+    text-decoration: none;
     color: yellow;
 }
 .nav_central ul{
