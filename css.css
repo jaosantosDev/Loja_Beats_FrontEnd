@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(img/ss.jpg);
+    background-image: url(Pagina_Inicial/img/ss.jpg);
     background-position: center; /*deixa a imagem centralizada*/
     background-size: cover; /*preenche toda a tela*/
     background-attachment: fixed; /*deixa a imagem fixada*/
