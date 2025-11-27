@@ -51,14 +51,10 @@ body{
 
 }
 #navegacao_central a:hover{
-    transform: scale(1.1);
           color: rgb(255, 238, 0);
              border-bottom: 1px solid rgb(255, 238, 0);
                   padding-bottom: 5px;
-     
 }
-
-
 
 #nav_direita{
     gap: 30px;
@@ -73,23 +69,21 @@ body{
     display: inline-block;
           color:rgb(255, 255, 255);
               text-decoration: none;
-                 padding: 4px;
+                 padding: 10px;
 
 }
 #nav_direita a:hover{
-    transform: scale(1.1);
        color: rgb(255, 238, 0);
           border-bottom: 1px solid rgb(255, 238, 0);
-             padding-bottom: 3px;
+             padding-bottom: 5px;
 }
 
 
 .msg_principal{
-    flex-grow: 1;
         text-align: center;
           margin: 50px ;
             font-size: 22px;
-             min-height: 100vh;
+                 min-height: 100vh;
    
     
   

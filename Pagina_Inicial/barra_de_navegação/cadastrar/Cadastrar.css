@@ -1,9 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 body{
     margin: 0;
     padding: 0;
+     font-family: "Merriweather", serif;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -11,6 +13,20 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+
+}
+.voltar{
+    display: flex;
+        width: 100%;
+            font-size: 16px;
+                
+            
+}
+.voltar a{
+    color: white;
+        text-decoration: none;
+        margin-left: 10px;
+
 }
 .caixa_cadastro{
     width: 400px;
@@ -18,7 +34,9 @@ body{
     border: 2px solid rgb(255, 255, 255, .2);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .6);
-    padding: 64px 40px;
+    padding: 62px 40px;
+    margin-top: auto;
+    margin-bottom: auto;
 
     
 }
